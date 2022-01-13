@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Consolas";
-  src: url("./fonts/CONSOLAB.eot");
-  src: url("./fonts/CONSOLAB.eot?#iefix") format("embedded-opentype");
-  src: url("./fonts/CONSOLAB.woff2") format("woff2");
-  src: url("./fonts/CONSOLAB.woff") format("woff");
-  src: url("./fonts/CONSOLAB.TTF") format("truetype");
-  src: url("./fonts/CONSOLAB.svg#svgFontName") format("svg");
+  src: url("./fonts/CONSOLAB.eot"),
+       url("./fonts/CONSOLAB.eot?#iefix") format("embedded-opentype"),
+       url("./fonts/CONSOLAB.woff2") format("woff2"),
+       url("./fonts/CONSOLAB.woff") format("woff"),
+       url("./fonts/CONSOLAB.TTF") format("truetype"),
+       url("./fonts/CONSOLAB.svg#svgFontName") format("svg");
 }
 
 html, body {
