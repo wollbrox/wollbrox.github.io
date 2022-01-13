@@ -4,7 +4,6 @@ window.addEventListener('load', (function() {
     this.document.createTextNode(new Date().getFullYear()));
 }));
 
-
 $("#toggle").click(function() {
   $(this).toggleClass('on');
   $("#resize").toggleClass("active");
@@ -35,3 +34,32 @@ TweenMax.staggerFrom("#menu li a", 1, {
 }, 0.1);
 
 new WOW().init();
+
+
+function openNewTab(page_src) {
+  window.open(page_src);
+}
+
+
+var form = document.getElementById("contact-form");
+    
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+  }).then(response => {
+    status.classList.add('success');
+    status.innerHTML = "thanks!";
+    form.reset()
+  }).catch(error => {
+    status.classList.add('error');
+    status.innerHTML = "something went wrong!"
+  });
+}
+form.addEventListener("submit", handleSubmit)
