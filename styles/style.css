@@ -287,7 +287,7 @@ nav #menu li a:hover {
   }
 }
 
-.container-fluid h4 {
+.container-fluid h3 {
   text-align: center;
 }
 
@@ -299,7 +299,7 @@ nav #menu li a:hover {
   left: 50%;
 }
 
-#index-page #video {
+#index-page .col-text {
   cursor: pointer;
 }
 
@@ -622,18 +622,6 @@ div.center #video {
   border-radius: 2%;
 }
 
-.prev, .next p {
-  color: grey;
-}
-
-.prev p {
-  text-align: left;
-}
-
-.next p {
-  text-align: right;
-}
-
 
 div #separator {
   font-family: "Consolas", Fallback, sans-serif !important;
@@ -727,7 +715,7 @@ div #separator::after {
 
 @media (max-width: 640px) {
   .grid-flex {
-    height: 40em;
+    height: 33em;
     display: -webkit-flex;
     -webkit-flex-direction: column;
     flex-direction: column; 
@@ -749,6 +737,10 @@ div #separator::after {
   }
 
   .Aligner-item {
-    width: 90%;
+    width: 100%;
+  }
+
+  #work-page {
+    padding-top: 5em;
   }
 }
