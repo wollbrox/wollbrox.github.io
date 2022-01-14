@@ -393,6 +393,7 @@ nav #menu li a:hover {
 
 #media ul li {
   display: inline-block;
+  cursor: pointer;
 }
 
 @media(max-width: 768px) {
